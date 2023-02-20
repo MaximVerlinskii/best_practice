@@ -68,15 +68,15 @@ class PersonAddressBuilder(PersonBuilder):
 
 if __name__ == '__main__':
     pb = PersonBuilder()
-    person = pb\
-        .lives\
-            .at('123 Lenina avenue')\
-            .in_city('Tomsk')\
-            .with_postcode('610225')\
-        .works\
-            .at('Cafe')\
-            .as_a('barista')\
-            .earning(125000)\
+    person = pb \
+        .lives \
+            .at('123 Lenina avenue') \
+            .in_city('Tomsk') \
+            .with_postcode('610225') \
+        .works \
+            .at('Cafe') \
+            .as_a('barista') \
+            .earning(125000) \
         .build()
 
     print(person)
